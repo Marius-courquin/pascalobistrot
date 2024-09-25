@@ -29,5 +29,5 @@ jobs:
       run: |
         poetry run python -m unittest ./tests/main_test.py
     - name: Build package
-      if: github.ref = 'refs/heads/main'
+      if: github.ref == 'refs/heads/main'
       run: peotry publish --build --username azeaze --password zaeazaze
